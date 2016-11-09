@@ -1071,6 +1071,7 @@ simDetector::simDetector(const char *portName, int maxSizeX, int maxSizeY, NDDat
     /* Set some default values for parameters */
     status =  setStringParam (ADManufacturer, "Simulated detector");
     status |= setStringParam (ADModel, "Basic simulator");
+    status |= setStringParam(ADSerialNumber, "Dummy serial");
     status |= setIntegerParam(ADMaxSizeX, maxSizeX);
     status |= setIntegerParam(ADMaxSizeY, maxSizeY);
     status |= setIntegerParam(ADMinX, 0);
